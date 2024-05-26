@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login Form</title>
+</head>
+
+<body>
+    <table border="3" align="center">
+        <tr>
+            <td>
+                <form method="post">
+                    <fieldset>
+                        <h2 align="center">
+                            Login Form
+                        </h2>
+                    </fieldset>
+                    <p>
+                        <label>Name <input type="text" id="firstName" name="firstName" placeholder="FirstName"> <input
+                                type="text" id="lastName" name="lastName" placeholder="LastName">
+                        </label>
+                    </p>
+
+                    <p>
+                        <label for="email">
+                            Email <input type="email" id="email" name="email" placeholder="Email">
+                        </label>
+                    </p>
+
+                    <p>
+                        <label for="phoneNumber">
+                            Phone Number <input type="number" id="phoneNumber" name="phoneNumber"
+                                placeholder="10-digit number" minlength="10" >
+                        </label>
+                    </p>
+
+                    <p>
+                        <label for="password">
+                            Password <input type="password" id="password" name="password" placeholder="password">
+                        </label>
+                    </p>
+
+
+                    <p>
+                            Gender<br>
+                            <input type="radio" id="male" name="gender" value="male" checked><label for="male">Male</label><br>
+                            <input type="radio" id="female" name="gender" value="female"><label for="female">Female</label><br>
+                            <input type="radio" id="none" name="gender" value="none"><label for="none">Don't wish to Enclose</label><br>
+                    </p>
+
+
+                    <p>
+                        <label for="address">
+                            Address :<br>
+                            <textarea name="address" id="address" cols="20" rows="5"></textarea>
+                        </label>
+                    </p>
+
+
+                    <p>
+                        <label for="dob">
+                            Date of Birth<br>
+                            <input type="date" id="dob" name="dob">
+                        </label>
+                    </p>
+
+
+                    <p>
+                        <label for="timing">
+                            Time<br>
+                            <input type="time" id="timing" name="timing" >
+                        </label>
+                    </p>
+
+
+                    <p>
+                            Languages<br>
+                            <input type="checkbox" name="languages[]" id="Tamil" value="Tamil" checked><label for="Tamil">Tamil</label> <br>
+                            <input type="checkbox" name="languages[]" id ="English" value="English"><label for="English">English</label> <br>
+                            <input type="checkbox" name="languages[]" id = "French" value="French"><label for="French">French</label> <br>
+                    </p>
+
+
+                    <p>
+                        <label for="interest">
+                            Select your field of interest:<br>
+                            <select name="interest" id="interest"  size="3" multiple>
+                                <option value="Music" id="Music">Music</option>
+                                <option value="Cycling" id="Cycling"> Cycling</option>
+                                <option value="Badminton" id="Badminton" >Badminton</option>
+                                <option value="Hockey" id="Hockey">Hockey</option>
+                                <option value="Cricket" id="Cricket">Cricket</option>
+                            </select>
+
+                        </label>
+                    </p>
+
+                    <p>
+                        <label for="file">
+                            Upload your Photo<br>
+                            <input type="file" name="file" id="file">
+                        </label>
+                    </p>
+
+                    <p>
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+ 
+                    </p>
+
+
+                </form>
+            </td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Forms Exercise</title>
+</head>
+
+<body>
+    <h1>Contact Form</h1>
+    <form enctype="multipart/form-data">
+        <p>
+            <label for="your_name">Name:</label><br>
+            <input type="text" name="your_name" id="your_name" placeholder="enter your name" size="15" maxlength="25">
+        </p>
+        <p>
+            <label for="your_email">Email:</label> <br>
+            <input type="text" name="your_email" id="your_email" placeholder="enter your email" size="25" maxlength="30">
+        </p>
+        <p>
+            <label>Subject:</label><br>
+            <input type="text" name="your_subject" placeholder="enter your subject" size="25" maxlength="30">
+        </p>
+        <p>
+            Choose what to learn:
+            <input type="radio" name="learning_topic" id="html" value="html" checked="checked" ><label for="html">HTML</label>
+            <input type="radio" name="learning_topic" id="css" value="css"><label for="css">CSS</label>
+            <input type="radio" name="learning_topic" id ="js" value="js"><label for="js">Javascript</label>
+
+        </p>
+        <p>
+            Additionals free courses:
+            <input type="checkbox" name="free_course[]" id="SS" value="SS"><label for="SS">Soft Skills</label> 
+            <input type="checkbox" name="free_course[]" id="TW" value="TW"><label for="TW">Type writing</label> 
+            <input type="checkbox" name="free_course[]" id="IS" value="IS"><label for="IS">Interview Skills</label> 
+        </p>
+        <p>
+            Joining Month:<br>
+            <select name="month" id="month" size="6" multiple>
+                <option value="">Select a month</option>
+                <option value="jan">January</option>
+                <option value="feb">Februrary</option>
+                <option value="mar">March</option>
+                <option value="jun">June</option>
+                <option value="nov" selected>November</option>
+                <option value="aug">August</option>
+            </select>
+        </p>
+        <br>
+        <p>
+            Message:<br>
+            <textarea name="comments" id="" cols="10" rows="5" placeholder="Enter your message"></textarea>
+        </p>
+        <p>
+            Upload your Resume:<br>
+            <input type="file" name="resume">
+
+        </p>
+        <p>
+            <input type="submit" name="Contact_form" value="Send message">
+        </p>
+    </form>
+</body>
+
+</html>
